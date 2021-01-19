@@ -7,13 +7,15 @@ import { MenuComponent } from './menu/menu.component';
 import { RodapeComponent } from './rodape/rodape.component';
 import { CorpoComponent } from './corpo/corpo.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ContatoComponent } from './contato/contato.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
     RodapeComponent,
-    CorpoComponent
+    CorpoComponent,
+    ContatoComponent
   ],
   imports: [
     BrowserModule,
