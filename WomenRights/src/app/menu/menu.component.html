@@ -1,26 +1,128 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto d-flex align-items-center">
-        <li class="nav-item active">
-         <img src="https://live.staticflickr.com/65535/50852693256_7b7114d90b.jpg" alt="imagem do user" width="50px" height="50px">
-        </li>
-        <li class="nav-item pl-3">
-         <p class="m-0 font-weight-bold text-black fs-16" >Direitos das Mulheres</p>
-        </li>
-
-      </ul>
-
-        <ul class="navbar-nav ml-auto d-flex align-items-center">
-            <li class="nav-item pl-3">
-               
-                <a class="m-0 font-weight-bold text-dark fs-16" >Contato <i class="fas fa-comment-dots"></i></a>
-                          
-            </li>
-        </ul>
-    </div>
-  </nav>
+<div class="section section-navbars">
+  <div class="container" id="menu-dropdown">
+      <div class="row">
+          <div class="col-md-6">
+              <h4>Menu</h4>
+              <nav class="navbar navbar-expand-lg bg-primary">
+                  <div class="container">
+                      <a class="navbar-brand" href="#">Menu</a>
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#example-navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-bar bar1"></span>
+                          <span class="navbar-toggler-bar bar2"></span>
+                          <span class="navbar-toggler-bar bar3"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="example-navbar" data-nav-image="https://i.imgur.com/hBdwy0h.png">
+                          <ul class="navbar-nav">
+                              <li class="nav-item active">
+                                  <a class="nav-link" href="#">
+                                      <p>Link</p>
+                                  </a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link" href="#">
+                                      <p>Link</p>
+                                  </a>
+                              </li>
+                              <li class="nav-item">
+                                <div ngbDropdown class="dropdown">
+                                    <a class="nav-link dropdown-toggle" ngbDropdownToggle>
+                                      <p>
+                                          Dropdown
+                                      </p>
+                                    </a>
+                                    <div ngbDropdownMenu class="dropdown-menu">
+                                      <a class="dropdown-item" href="#">Action</a>
+                                      <a class="dropdown-item" href="#">Another action</a>
+                                      <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </div>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+              </nav>
+          </div>
+          <div class="col-md-6">
+              <h4>Menu with Icons</h4>
+              <nav class="navbar navbar-expand-lg bg-info">
+                  <div class="container">
+                      <a class="navbar-brand" href="#">Icons</a>
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#example-navbar-icons" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-bar bar1"></span>
+                          <span class="navbar-toggler-bar bar2"></span>
+                          <span class="navbar-toggler-bar bar3"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="example-navbar-icons">
+                          <ul class="navbar-nav ml-auto">
+                              <li class="nav-item">
+                                  <a class="nav-link" href="#pablo"><i class="now-ui-icons ui-1_send" aria-hidden="true"></i></a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link" href="#pablo"><i class="now-ui-icons users_single-02" aria-hidden="true"></i></a>
+                              </li>
+                              <li class="nav-item">
+                                  <div ngbDropdown class="dropdown">
+                                      <a class="nav-link dropdown-toggle" ngbDropdownToggle>
+                                          <i class="now-ui-icons ui-1_settings-gear-63"></i>
+                                      </a>
+                                      <div ngbDropdownMenu class="dropdown-menu dropdown-menu-right">
+                                          <div class="dropdown-header">Dropdown header</div>
+                                          <a class="dropdown-item">Action</a>
+                                          <a class="dropdown-item">Another action</a>
+                                          <a class="dropdown-item">Something else here</a>
+                                          <div class="dropdown-divider"></div>
+                                          <a class="dropdown-item">Separated link</a>
+                                          <div class="dropdown-divider"></div>
+                                          <a class="dropdown-item">Another separated link</a>
+                                      </div>
+                                  </div>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+              </nav>
+          </div>
+      </div>
+      <h4>Navigation</h4>
+  </div>
+  <div id="navbar">
+      <div class="navigation-example" style="background-image:url('assets/img/bg7.jpg')">
+          <!-- Navbar Primary  -->
+          <nav class="navbar navbar-expand-lg bg-primary">
+              <div class="container">
+                  <div class="navbar-translate">
+                      <a class="navbar-brand" href="#pablo">Primary color</a>
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#example-navbar-primary" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-bar bar1"></span>
+                          <span class="navbar-toggler-bar bar2"></span>
+                          <span class="navbar-toggler-bar bar3"></span>
+                      </button>
+                  </div>
+                  <div class="collapse navbar-collapse" id="example-navbar-primary">
+                      <ul class="navbar-nav ml-auto">
+                          <li class="nav-item active">
+                              <a class="nav-link" href="#pablo">
+                                  <i class="now-ui-icons objects_globe"></i>
+                                  <p>Discover</p>
+                              </a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#pablo">
+                                  <i class="now-ui-icons users_circle-08"></i>
+                                  <p>Profile</p>
+                              </a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#pablo">
+                                  <i class="now-ui-icons ui-1_settings-gear-63"></i>
+                                  <p>Settings</p>
+                              </a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </nav>
+          <!-- End Navbar Primary -->
+      </div>
+  </div>
+</div>

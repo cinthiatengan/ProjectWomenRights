@@ -9,6 +9,11 @@ import { CorpoComponent } from './corpo/corpo.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ContatoComponent } from './contato/contato.component';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; // this is needed!
+import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +25,10 @@ import { ContatoComponent } from './contato/contato.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    BrowserAnimationsModule,
+    FormsModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
